@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 136707583}
+  - component: {fileID: 136707582}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -139,6 +140,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &136707582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136707581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcf2dee859f834d6098454efa080f4ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Civilian: {fileID: 483351143}
+  HumanHero: {fileID: 746074785}
 --- !u!4 &136707583
 Transform:
   m_ObjectHideFlags: 0
@@ -155,6 +170,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &483351143 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ded3224815b184e34bb9d34c9898d015, type: 3}
+  m_PrefabInstance: {fileID: 895524451}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &505449179 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ea540177a4cd244a4835e2d884bbf413, type: 3}
@@ -253,6 +273,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &746074785 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ea540177a4cd244a4835e2d884bbf413, type: 3}
+  m_PrefabInstance: {fileID: 854843542}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &854843542
 PrefabInstance:
   m_ObjectHideFlags: 0
