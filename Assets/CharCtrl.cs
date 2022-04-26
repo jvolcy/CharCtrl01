@@ -26,7 +26,8 @@ public class CharCtrl : MonoBehaviour
         //restore the default shader for each of the civilian's meshrenderers
         for (int i = 0; i < CivilianSkinnedMeshRenderers.Length; i++)
         {
-            CivilianSkinnedMeshRenderers[i].material.shader = Shader.Find("Standard Transparent");
+            CivilianSkinnedMeshRenderers[i].material.shader = Shader.Find("Standard");
+            //CivilianSkinnedMeshRenderers[i].material.shader.
         }
 
     }
@@ -74,6 +75,10 @@ public class CharCtrl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SetTransparentShaders();
+            Civilian.GetComponent<Animator>().SetTrigger("FadeOut");
+        }
     }
 }
